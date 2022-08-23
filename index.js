@@ -28,32 +28,32 @@ function buttonActivityHandler() {
         clear = setInterval(function () {
             if(num < 99) {
                 if(num < 10) 
-                    ms.innerHTML = "0" + num.toString();
+                    ms.innerHTML = " " + "0" + num.toString();
                 else 
-                    ms.innerHTML = num;
+                    ms.innerHTML = " " + num;
                 num++;
             } else {
                 num = 0;
                 if(parseInt(sec.innerHTML) < 59) {
                     if(parseInt(sec.innerHTML) < 9) {
-                        sec.innerHTML = '0' + (parseInt(sec.innerHTML) + 1).toString();
+                        sec.innerHTML = " " + '0' + (parseInt(sec.innerHTML) + 1).toString();
                     } else {
-                        sec.innerHTML = (parseInt(sec.innerHTML) + 1).toString();
+                        sec.innerHTML = " " + (parseInt(sec.innerHTML) + 1).toString();
                     }
                 } else {
                     sec.innerHTML = '00';
                     if(parseInt(min.innerHTML) < 59) {
                         if(parseInt(min.innerHTML) < 9) {
-                            min.innerHTML = '0' + (parseInt(min.innerHTML) + 1).toString();
+                            min.innerHTML = " " + '0' + (parseInt(min.innerHTML) + 1).toString();
                         } else {
-                            min.innerHTML = (parseInt(min.innerHTML) + 1).toString();
+                            min.innerHTML = " " + (parseInt(min.innerHTML) + 1).toString();
                         }
                     } else {
                         hour.innerHTML = '00';
                         if(parseInt(hour.innerHTML) < 9) {
-                            hour.innerHTML = '0' + (parseInt(hour.innerHTML) + 1).toString();
+                            hour.innerHTML = " " + '0' + (parseInt(hour.innerHTML) + 1).toString();
                         } else {
-                            hour.innerHTML = (parseInt(hour.innerHTML) + 1).toString();
+                            hour.innerHTML = " " + (parseInt(hour.innerHTML) + 1).toString();
                         }
                     }
                 } 
