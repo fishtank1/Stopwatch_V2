@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- FONT IMPORTED FROM ADOBE -->
+    <link rel="stylesheet" href="https://use.typekit.net/fpy1bbc.css">
+   <!-- FACICON FOR SITE -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/610/610073.png" type="image/x-icon">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- TYPESCRIPT CSS DEPENDECY FILES -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <!-- SCREEN RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="flex flex-col justify-center items-center">
+   <!-- TIMER -->
+    <main class="flex flex-col justify-center items-center mt-10">
+        <!-- TIMER DIGITS SECTION -->
+        <p class="drop-shadow-xl font-normal tracking-tight" id="counter">
+            <span id="hr">00</span> 
+            :<span id="min"> 00</span>
+            :<span id="sec"> 00</span>
+            :<span id="ms" class="opacity-10"> 00</span>
+        </p>
+
+        <!-- TIMER BUTTONS -->
+        <div class="flex justify-around items-center mt-10" id="responsive-btn">
+            <button class="text-4xl p-4 rounded start-btn font-mono">Start</button>
+            <button class="text-4xl p-5 rounded reset-btn font-mono">Reset</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex flex-col justify-center items-center">
+        <hr >
+        <p class="m-5" id="footer-text">
+            <!-- INLINE STYLE APPLIED -->
+            <span style="font-weight: 200; opacity: 0.4;">Made by</span>
+            Soumyajeet Sengupta</p>
+        <hr>
+    </footer>
+
+    <!-- JAVASCRIPT DEPENDENCY IMPORT -->
+    <script src="index.js"></script>
+</body>
+</html>
